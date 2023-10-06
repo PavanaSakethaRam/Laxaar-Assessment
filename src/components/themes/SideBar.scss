@@ -1,0 +1,55 @@
+// Sidebar.scss
+.sidebar {
+  padding-top: 5px;
+  flex-shrink: 0;
+  z-index: 0;
+  fill: #fff;
+
+  .ant-menu-item {
+    height: 37px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+
+    .menu-item-content {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .menu-label {
+        margin-left: 10px; /* Adjust the margin as needed */
+      }
+    }
+
+    .vertical-line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background-color: transparent;
+    }
+
+    &:hover .vertical-line {
+      background-color: #f87060;
+    }
+
+    &:hover {
+      background-color: #fff2f1;
+      color: #f87060;
+    }
+
+    &.ant-menu-item-selected .vertical-line {
+      background-color: #f87060;
+    }
+
+    &.ant-menu-item-selected {
+      background-color: #fff2f1;
+      color: #f87060;
+    }
+    
+  }
+}

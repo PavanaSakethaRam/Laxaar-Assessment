@@ -1,0 +1,143 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1); /* Adjust the box shadow properties */
+  margin-bottom: 7px;
+  z-index: 1;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  fill: #292929;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.text {
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.main-text {
+  color: #292929;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.sub-text {
+  color: #292929;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circle {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid #f87060;
+  background: url("../../assets/Аватар.png") 50% / cover no-repeat;
+  margin-left: 10px; /* Adjust margin as needed */
+}
+
+.user-popout {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 55px; /* Adjust top position as needed */
+  right: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 5px 5px 0; /* Adjust margin as needed */
+  // There has to be a small arrow pointing to the user info button
+  // This is the arrow
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    border: 10px solid transparent;
+    border-bottom-color: white;
+  }
+}
+
+.user-info:hover .user-popout{
+  display: block;
+}
+
+.user-popout:hover{
+  display: block;
+}
+
+.user-full-details {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 2px solid #f87060;
+  background: lightgray 50% / cover no-repeat;
+  margin: 10px; /* Adjust margin as needed */
+}
+
+.user-id {
+  color: #454f5a;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user-name {
+  color: #454f5a;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.logut-btn {
+  padding: 10px;
+}
