@@ -72,7 +72,7 @@
   position: absolute;
   top: 55px; /* Adjust top position as needed */
   right: 10px;
-  background: white;
+  background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 0 5px 5px 0; /* Adjust margin as needed */
   // There has to be a small arrow pointing to the user info button
@@ -80,10 +80,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: -10px;
+    top: -16px;
     right: 10px;
     border: 10px solid transparent;
-    border-bottom-color: white;
+    border-radius: 5px;
+    border-bottom-color: #fff;
   }
 }
 

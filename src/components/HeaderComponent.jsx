@@ -8,9 +8,9 @@ import userLogo from "../assets/Аватар.png"
 const HeaderComponent = ({ collapsed, onToggleCollapse }) => {
     const languageMenu = (
         <Menu>
-            <Menu.Item key="1">Hindi</Menu.Item>
-            <Menu.Item key="2">Telugu</Menu.Item>
-            <Menu.Item key="3">French</Menu.Item>
+            <Menu.Item key="1">German</Menu.Item>
+            <Menu.Item key="2">French</Menu.Item>
+            <Menu.Item key="3">Spanish</Menu.Item>
         </Menu>
     );
     return (
@@ -54,8 +54,10 @@ const HeaderComponent = ({ collapsed, onToggleCollapse }) => {
                 <Button type="primary" danger style={{ width: '202px', height: '44px', marginRight: 30 }}>
                     <FileTextOutlined />
                     Documentation</Button>
-                <Dropdown overlay={languageMenu} danger>
-                    <Button style={{ width: '148px', height: '44px', color: '#F87060', background: '#FFF2F1' }}>
+                <Dropdown overlay={languageMenu} >
+                    <Button style={{ width: '148px', height: '44px', color: '#F87060', background: '#FFF2F1',
+                    border: '1px solid #aba2a25b', borderRadius: '4px', marginRight: 30
+                      }} danger>
                         <GlobalOutlined /> English
                         <DownOutlined/>
                     </Button>
