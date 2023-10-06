@@ -60,7 +60,6 @@ const Content = () => {
                     />
                 </div>
                 <Table
-                // There has to be a gap between each of the rows
                     columns={[
                         {
                             title: '',
@@ -89,7 +88,6 @@ const Content = () => {
                         pageSize: 6,
                         showSizeChanger: false,
                         position: ['bottomCenter'],
-                        // The color of the pagination text
                     }}
                     size="large"
                 />

@@ -1,14 +1,15 @@
 .content {
-  background: url('../../assets/Vector.png'), linear-gradient(
-    41deg,
-    #ffd5d2 0.83%,
-    #fff2f1 14.56%,
-    #ffe1df 23.58%,
-    #fff 34.09%,
-    #fff2f1 70.46%,
-    #fff2f1 80.56%,
-    rgba(248, 112, 96, 0.1) 86.25%
-  );
+  background: url("../../assets/Vector.png"),
+    linear-gradient(
+      41deg,
+      #ffd5d2 0.83%,
+      #fff2f1 14.56%,
+      #ffe1df 23.58%,
+      #fff 34.09%,
+      #fff2f1 70.46%,
+      #fff2f1 80.56%,
+      rgba(248, 112, 96, 0.1) 86.25%
+    );
   background-size: cover; /* Adjust as needed */
   height: 110vh;
   flex-shrink: 0;
@@ -22,7 +23,6 @@
     #fff2f1 80.56%,
     rgba(248, 112, 96, 0.1) 86.25%
   );
-
 
   .content-header {
     display: flex;
@@ -84,10 +84,10 @@
 
         .ant-table-tbody {
           tr {
-              td {
-                padding-bottom: 30px;
-              }
+            td {
+              padding-bottom: 30px;
             }
+          }
         }
 
         .ant-table-row {
@@ -136,6 +136,17 @@
       a {
         color: #fff;
       }
+    }
+  }
+  @media (max-width: 768px) {
+    height: auto; // Adjust height for smaller screens
+  }
+
+  @media (max-width: 576px) {
+    .table-container {
+      margin: 10px;
+      padding: 10px;
+      height: auto; // Adjust height for smaller screens
     }
   }
 }
