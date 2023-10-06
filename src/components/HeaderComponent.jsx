@@ -3,7 +3,7 @@ import { Button, Dropdown, Menu } from 'antd';
 import { MenuFoldOutlined, MenuUnfoldOutlined, GlobalOutlined, FileTextOutlined, UploadOutlined, DownOutlined } from '@ant-design/icons';
 import logo from "../assets/logo.svg"
 import "./themes/Header.scss"
-import userLogo from "../assets/Аватар.png"
+import userLogo from "../assets/ProfileIcon.png"
 
 const HeaderComponent = ({ collapsed, onToggleCollapse }) => {
     const languageMenu = (
